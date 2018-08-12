@@ -821,7 +821,7 @@ header {
 
 .header__nav {
   display: none;
-  line-height: 1;
+  line-height: 0.75;
   position: fixed;
   top: 59px;
   left: 0;
@@ -834,6 +834,8 @@ header {
       position: relative;
       top: inherit;
       background-color: inherit; } }
+  .header__nav ul {
+    font-size: 0; }
   .header__nav li {
     text-align: center;
     margin: 25px 0;
@@ -1105,14 +1107,6 @@ header {
   .about__hero--slide {
     position: relative;
     height: 100%; }
-    .about__hero--slide.slick-slide {
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 0;
-      position: relative; }
-      @media screen and (min-width: 48.125em) {
-        .about__hero--slide.slick-slide {
-          background-size: cover; } }
     .about__hero--slide .container {
       height: 100%; }
   .about__hero--slide-container {
@@ -1354,48 +1348,5 @@ header {
     color: #fff; }
     .about__wired--title a:hover {
       color: #67d9da; }
-
-.about__ig--slider {
-  width: 90%;
-  margin: 0 auto;
-  overflow: visible; }
-  .about__ig--slider .about__ig--slide {
-    margin: 0 0.5%; }
-  .about__ig--slider .slick-next, .about__ig--slider .slick-prev {
-    position: absolute;
-    display: block;
-    height: 25px;
-    width: 16px;
-    line-height: 0;
-    font-size: 0;
-    cursor: pointer;
-    background: 0 0;
-    color: transparent;
-    top: 50%;
-    margin-top: -10px;
-    padding: 0;
-    border: none;
-    outline: 0;
-    opacity: 1;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
-    .about__ig--slider .slick-next:before, .about__ig--slider .slick-prev:before {
-      content: '';
-      display: block;
-      border-bottom: 3px solid #000;
-      border-right: 3px solid #000;
-      line-height: 1;
-      height: 25px;
-      width: 25px;
-      -webkit-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-  .about__ig--slider .slick-prev {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    left: -20px; }
-  .about__ig--slider .slick-next {
-    right: -20px; }
 
 /*# sourceMappingURL=maps/style.css.map */

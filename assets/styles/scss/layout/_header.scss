@@ -40,7 +40,7 @@ header {
 }
 .header__nav {
     display: none;
-    line-height: 1;
+    line-height: 0.75;
     position: fixed;
     top: 59px;
     left: 0;
@@ -55,6 +55,9 @@ header {
     }
     &.active {
         // display: block;
+    }
+    ul {
+        font-size: 0;
     }
     li {
         text-align: center;
